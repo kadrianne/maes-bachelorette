@@ -16,7 +16,6 @@ main {
   background-color: #f8edeb;
   width: 80%;
   min-height: 100vh;
-  border-collapse: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,6 +23,7 @@ main {
   border-color: #D7A29E;
   border-style: double;
   border-width: 0 10px;
+  padding: 10px 0;
 }
 
 h1 {
