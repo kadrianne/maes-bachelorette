@@ -1,38 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: 'Poiret One', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b76e79;
   min-height: 100vh;
+  width: 100vw;
+  font-weight: 700;
+}
+
+main {
+  background-color: #f8edeb;
+  width: 80%;
+  min-height: 100vh;
+  border-collapse: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-color: #D7A29E;
+  border-style: double;
+  border-width: 0 10px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0 0 40px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h2 {
+  font-size: 36px;
+  text-align: center;
+  margin: 75px 0 0 0;
+  font-family: 'Lobster Two', cursive;
+  font-weight: 400;
+}
+
+p {
+  margin: 25px 0 0 0;
+}
+
+.details > p {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Lobster Two', cursive;
+  font-weight: 400;
+}
+
+.countdown {
+  font-size: 36px;
+  color: #C07980;
+  width: 250px;
+  margin-top: 25px;
+}
+
+.time {
+  float: left;
+  text-align: right;
+  width: 75px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .countdown {
+    font-size: 30px;
+    width: 225px;
   }
 }
