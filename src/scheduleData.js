@@ -1,6 +1,6 @@
 export const scheduleData = [
     {
-        date: 'Friday, April 9',
+        date: 'friday, april 9',
         activities: [
             {
                 time: '6pm',
@@ -13,7 +13,7 @@ export const scheduleData = [
         ]
     },
     {
-        date: 'Saturday, April 10',
+        date: 'saturday, april 10',
         activities: [
             {
                 time: '11:30am',
@@ -34,7 +34,7 @@ export const scheduleData = [
         ]
     },
     {
-        date: 'Sunday, April 11',
+        date: 'sunday, april 11',
         activities: [
             {
                 time: '11am',
