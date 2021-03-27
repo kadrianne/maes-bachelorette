@@ -27,7 +27,7 @@ function App() {
   };
 
   const renderSchedule = () => scheduleData.map(day => <Schedule day={day} />)
-  const renderText = () => <>BEFORE THE RING <GiDiamondRing className='diamond' /></>;
+  const renderText = () => <>BEFORE THE NG <GiDiamondRing className='diamond' /></>;
 
   return (
     <div className="App">
