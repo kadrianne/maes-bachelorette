@@ -1,5 +1,7 @@
 import './App.css';
 import Countdown, { zeroPad } from 'react-countdown';
+import Blink from 'react-blink-text';
+import Sparkles from './Sparkles';
 
 function App() {
   const partyDate = 1617973200000;
@@ -24,7 +26,15 @@ function App() {
   return (
     <div className="App">
       <main>
-        <h1>MAE'S LAST FLING<br/>BEFORE THE NG</h1>
+        <h1>
+          <Sparkles color='#ffc864'>
+            MAE'S LAST FLING
+          </Sparkles>
+          <br></br>
+          <Sparkles color='#bd5d6b'>
+            <Blink color='#ffc864' text="BEFORE THE NG" fontSize='60px'></Blink>
+          </Sparkles>
+        </h1>
         <section className='details'>
           <p>april 9-11, 2021</p>
           <p>red hook, ny</p>
