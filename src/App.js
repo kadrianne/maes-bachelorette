@@ -2,6 +2,9 @@ import './App.css';
 import Countdown, { zeroPad } from 'react-countdown';
 import Blink from 'react-blink-text';
 import Sparkles from './Sparkles';
+import Schedule from './Schedule';
+import { scheduleData } from './scheduleData';
+import { GiDiamondRing } from 'react-icons/gi'
 
 function App() {
   const partyDate = 1617973200000;
@@ -23,6 +26,9 @@ function App() {
     }
   };
 
+  const renderSchedule = () => scheduleData.map(day => <Schedule day={day} />)
+  const renderText = () => <>BEFORE THE RING <GiDiamondRing className='diamond' /></>;
+
   return (
     <div className="App">
       <main>
@@ -32,7 +38,7 @@ function App() {
           </Sparkles>
           <br></br>
           <Sparkles color='#bd5d6b'>
-            <Blink color='#ffc864' text="BEFORE THE NG" fontSize='60px'></Blink>
+            <Blink color='#ffc864' text={renderText()} fontSize='60px'></Blink>
           </Sparkles>
         </h1>
         <section className='details'>
@@ -40,7 +46,11 @@ function App() {
           <p>red hook, ny</p>
         </section>
         <Countdown date={partyDate} renderer={renderer} />
-        <h2>schedule coming soon!</h2>
+        <Sparkles color='#ffc864'>
+          <section className='schedule'>
+            {renderSchedule()}
+          </section>
+        </Sparkles>
       </main>
     </div>
   );
