@@ -7,7 +7,8 @@ import { scheduleData } from './scheduleData';
 import { GiDiamondRing } from 'react-icons/gi'
 
 function App() {
-  const partyDate = 1617973200000;
+  // const partyDate = 1617973200000;
+  const weddingDate = 1619899200000;
 
   const Complete = () => <h2>🎉</h2>
 
@@ -27,14 +28,14 @@ function App() {
   };
 
   const renderSchedule = () => scheduleData.map(day => <Schedule day={day} />)
-  const renderText = () => <>BEFORE THE NG <GiDiamondRing className='diamond' /></>;
+  const renderText = () => <>the weddiNG <GiDiamondRing className='diamond' /></>;
 
   return (
     <div className="App">
       <main>
         <h1>
           <Sparkles color='#ffc864'>
-            MAE'S LAST FLING
+            MAE + ALVIN
           </Sparkles>
           <br></br>
           <Sparkles color='#bd5d6b'>
@@ -42,10 +43,11 @@ function App() {
           </Sparkles>
         </h1>
         <section className='details'>
-          <p>april 9-11, 2021</p>
-          <p>red hook, ny</p>
+          <p>gurney's montauk resort & seawater spa</p>
+          <p>290 old montauk highway</p>
+          <p>montauk, ny 11954</p>
         </section>
-        <Countdown date={partyDate} renderer={renderer} />
+        <Countdown date={weddingDate} renderer={renderer} />
         <Sparkles color='#ffc864'>
           <section className='schedule'>
             {renderSchedule()}
